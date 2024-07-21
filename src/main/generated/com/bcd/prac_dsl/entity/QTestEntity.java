@@ -21,6 +21,8 @@ public class QTestEntity extends EntityPathBase<TestEntity> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
+    public final NumberPath<Long> level = createNumber("level", Long.class);
+
     public QTestEntity(String variable) {
         super(TestEntity.class, forVariable(variable));
     }

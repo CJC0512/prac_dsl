@@ -10,11 +10,12 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class TestEntity {
+public class User {
+
     @Id
     @GeneratedValue
     private Long id;
 
     @Column
-    private Long level;
+    private String nickname;
 }
